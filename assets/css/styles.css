@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/* Variables */
+:root {
+ 
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --secondary-color: #ff4500;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.1s;
+}
+/* Variables end */
+@font-face {
+  font-family: "SF";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+nav {
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.logo-img{
+    width: 15em;
+    height: 3em;
+    margin: 0;
+    /*border-bottom: 0px;*/
+    /*font-family: "San Francisco";*/
+
+    
+    
+}
+
+.nav-h1 a:hover {
+  color: #0bf0e5;
+  box-shadow: 2px 2px 5px 5px #cdcec6 ;   
+}
+
+
+ 
+
+.navigation a:hover{
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+  
+nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+nav a:hover {
+    color: var(--secondary-color);
+    
+}
+  
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+   
+}
+  
+nav ul li {
+    font-weight: var(--bold-font);
+    
+    
+}
+
+.burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
+}
+
+.hero img {
+  margin-top: 1.3rem;
+  height: 37rem;
+  width: 22rem;
+  border-radius: 5px;
+ 
+
+}
+
+.bio {
+width: 26rem;
+height: 7rem;
+padding: 0.5rem;
+border-radius: 15px;
+background: #e9e2e2;
+box-shadow:  10px 10px 20px #c6c0c0,
+             -10px -10px 20px #ffffff; 
+text-align: justify;
+}
+
+.bio h2{
+  margin-bottom: var(--bottom-margin);
+  font-family: "San Francisco";
+}
+
+.bio p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+  letter-spacing: 0.08px;
+  
+}
+
+.more-about {
+  background-color: rgba(196, 166, 166, 0.2);
+  padding: 1rem 6rem;
+  margin-top: 0rem;
+  box-shadow: 0px 0px 10px 2px rgba(99, 104, 112, 0.3);
+  border-radius: 10px;
+}
+
+.more-about h2 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+
+.more-about ul {
+  line-height: var(--line-height);
+  padding: 0.4rem;
+}
+
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+
+.skill-header {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.skills-wrapper img {
+  padding: 1rem;
+ 
+  
+  
+}
+.skills-wrapper figcaption {
+  border-top: -3rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+.icon-card {
+  border-radius: 32px;
+background: linear-gradient(145deg, #cfcece, #f6f5f5);
+box-shadow:  12px 12px 24px #bfbebe,
+             -12px -12px 24px #ffffff;
+  padding: 20px;
+  margin: 10px;
+}
+
+.projects {
+  background-color: var(--bg-color);
+  padding: 32px 0;
+  margin-top: 2rem;
+  
+  
+}
+
+.project-pic {
+  width: 65%;
+  height: 60%;
+  border-radius: 5px;
+}
+
+.project-pic-cart {
+  width: 60%;
+  height: 40%;
+  border-radius: 5px;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+.projects-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-container {
+  text-align: center;
+  width:  21.875rem;
+  padding: 1rem;
+  
+}
+
+.project-container p {
+  padding: 0.4rem;
+  text-align: justify;
+}
+
+.project-title {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-details {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-card {
+border-radius: 32px;
+background: linear-gradient(145deg, rgba(226, 217, 217, 0.808), rgb(255, 255, 255));
+box-shadow:  10px 10px 20px #bfbebe,
+             -6px -6px 20px #ffffff;
+  padding: 20px;
+  margin: 10px;
+}
+.contact {
+  margin-top: 2rem;
+}
+ .contact h2 {
+   text-align: center;
+
+ }
+
+.contact-form-container {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+}
+
+.contact-form-container label {
+  line-height: 2.7rem;
+  font-weight: var(--bold-font);
+  color: var(--primary-color);
+}
+
+.contact-form-container textarea {
+  min-height: 6.25rem;
+  font-size: 14px;
+}
+
+.contact-form-container .input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 2px outset var(--primary-color);
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.input-field::placeholder {
+  padding: 0.5rem;
+  color: var(--primary-color);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: var(--bold-font);
+  transition: var(--transition);
+  color: #ff7235;
+
+}
+
+.submit-btn:hover {
+  background-color: var(--primary-color);
+  border: 3px solid  var(--primary-color);
+  cursor: pointer;
+  color: black;
+}
+
+.input-field:focus {
+  border: 3px solid rgb(255, 0, 0);
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 40%;
+}
+
+.socicon {
+  width: 2rem;
+  height: 2rem;
+}
+
+footer {
+  background-color: var(--bg-color);
+  padding: 1.25rem;
+  text-align: center;
+  margin: 1rem 0 0;
+}
+
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 5%;
+  cursor: pointer;
+}
+
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media screen and (max-width: 720px) {
+  
+
+
+  nav {
+    padding: 1.5rem 1rem;
+
+  }
+
+
+  nav ul {
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.2s ease;
+    position: fixed;
+    border-radius: 3px;
+    box-shadow: 0px 2px 5px 2px var(--primary-shadow) ;
+  }
+
+  nav ul li {
+    margin: 8px;
+  }
+
+
+
+  .burger-menu {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  } 
+
+  .hero {
+    margin-top: -1rem;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .hero img {
+    height: 30rem;
+    width: 18rem;
+  }
+
+  .bio {
+    margin-top: -4rem;
+    width: 22rem;
+    
+  }
+  .more-about {
+    margin-top: 2rem;
+    padding: 1rem 3.5rem;
+  }
+
+  .more-about h2 {
+    text-align: center;
+  }
+
+  .more-about {
+    text-align: justify;
+  }
+
+  .icon {
+    width: 6.3rem;
+    height: 5.8rem;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project-container {
+    width: 25rem;
+  }
+
+  .contact-form-container {
+    max-width: 23.75rem;
+  }
+
+}
+
+@media screen and (max-width:420px) {
+  .hero img {
+   height: 35rem;
+   width: 20rem;
+
+  }
+
+  .bio{
+    width: 20rem;
+  }
+
+  .project-container {
+    width: 23rem ;
+
+  }
+
+  .contact-form-container {
+    max-width: 20rem;
+  }
+  
+}
